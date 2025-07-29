@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "emil.auth_proto.v1;auth_proto";
+
+service NoteAuth{
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+  rpc Login(LoginRequest) returns (LoginResponse);
+  rpc RegisterApp(AppRequest) returns (AppResponse);
+}
+
+
+message AppRequest{
+  string name = 1;
+  int32 app_id = 2;
+  string secret = 3;
+}
+
+message AppResponse{
+  int32 app_id = 1;
+}
+
+message RegisterRequest{
+  string email = 1;
+  string password = 2;
+}
+
+message RegisterResponse{
+  int64 id = 1;
+}
+
+message LoginRequest{
+  string email = 1;
+  string password = 2;
+  int32 app_id = 3;
+}
+
+message LoginResponse{
+  string token = 1;
+}
