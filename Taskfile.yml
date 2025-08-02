@@ -6,4 +6,4 @@ tasks:
       - gen
     desc: "Generate contract"
     cmds:
-      - protoc -I=proto --go_out=gen/go --go_opt=paths=source_relative --go-grpc_out=gen/go --go-grpc_opt=paths=source_relative proto/auth/auth.proto
+      - protoc -I=auth_proto/proto -I=notes_proto/proto -I=googleapis --go_out=auth_proto/gen/go --go_opt=paths=source_relative --go-grpc_out=auth_proto/gen/go --go-grpc_opt=paths=source_relative --grpc-gateway_out=auth_proto/gen/go --grpc-gateway_opt=paths=source_relative auth_proto/proto/auth/auth.proto notes_proto/proto/note/note.proto
