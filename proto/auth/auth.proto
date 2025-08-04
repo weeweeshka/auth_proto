@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "emil.auth_proto.v1;auth_proto";
+option go_package = "github.com/weeweeshka/auth_proto/gen/go/auth;auth";
 
 import "googleapis/google/api/annotations.proto";
 

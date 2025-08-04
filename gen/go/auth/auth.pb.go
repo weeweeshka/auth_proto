@@ -4,7 +4,7 @@
 // 	protoc        v6.31.1
 // source: auth_proto/proto/auth/auth.proto
 
-package auth_proto
+package auth
 
 import (
 	_ "google.golang.org/genproto/googleapis/api/annotations"
@@ -352,7 +352,7 @@ const file_auth_proto_proto_auth_auth_proto_rawDesc = "" +
 	"\bNoteAuth\x12W\n" +
 	"\bRegister\x12\x15.auth.RegisterRequest\x1a\x16.auth.RegisterResponse\"\x1c\x82\xd3\xe4\x93\x02\x16:\x01*\"\x11/v1/auth/register\x12K\n" +
 	"\x05Login\x12\x12.auth.LoginRequest\x1a\x13.auth.LoginResponse\"\x19\x82\xd3\xe4\x93\x02\x13:\x01*\"\x0e/v1/auth/login\x12N\n" +
-	"\vRegisterApp\x12\x10.auth.AppRequest\x1a\x11.auth.AppResponse\"\x1a\x82\xd3\xe4\x93\x02\x14:\x01*\"\x0f/v1/auth/regappB\x1fZ\x1demil.auth_proto.v1;auth_protob\x06proto3"
+	"\vRegisterApp\x12\x10.auth.AppRequest\x1a\x11.auth.AppResponse\"\x1a\x82\xd3\xe4\x93\x02\x14:\x01*\"\x0f/v1/auth/regappB3Z1github.com/weeweeshka/auth_proto/gen/go/auth;authb\x06proto3"
 
 var (
 	file_auth_proto_proto_auth_auth_proto_rawDescOnce sync.Once
